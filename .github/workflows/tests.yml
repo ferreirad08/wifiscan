@@ -1,0 +1,22 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version:
+          - '3.11'
+
+    runs-on: ${{ matrix.os }}
+
+    name: ${{ matrix.os }}, Python ${{ matrix.python-version }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          node lib/index.js
