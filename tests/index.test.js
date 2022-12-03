@@ -1,14 +1,14 @@
 const { getInterface, scanNetworks } = require('../lib');
 
-describe('Tests of getInterface function', () => {
-  it('type', () => {
+describe('getInterface function', () => {
+  it('output is string', () => {
     const iface = getInterface();
     expect(typeof iface).toEqual('string');
   });
 });
 
-describe('Tests of scanNetworks function', () => {
-  it('type', () => {
+describe('scanNetworks function', () => {
+  it('output is object', () => {
     const iface = getInterface();
     const networks = scanNetworks(iface);
     expect(networks).toBeInstanceOf(Object);
