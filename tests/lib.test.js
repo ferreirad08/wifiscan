@@ -1,7 +1,7 @@
 const lib = require('../lib/index.js');
 
-describe('The return of getInterface function is a string', () => {
-  it(() => {
+describe('Tests of getInterface function', () => {
+  it('type', () => {
     const interface = lib.getInterface();
     expect(interface).toBeInstanceOf(String);
   });
