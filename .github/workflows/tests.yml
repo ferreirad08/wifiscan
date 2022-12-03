@@ -9,16 +9,14 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        python-version:
-          - '3.11'
+        node-version: [14.x, 16.x, 18.x]
 
     runs-on: ${{ matrix.os }}
 
-    name: ${{ matrix.os }}, Python ${{ matrix.python-version }}
+    name: ${{ matrix.os }}, Node ${{ matrix.node-version }}
 
     steps:
       - uses: actions/checkout@v2
       - run: |
-          node lib/index.js
           npm install
           npm test
