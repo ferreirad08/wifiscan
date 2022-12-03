@@ -1,4 +1,4 @@
-const { getInterface } = require('../lib/index.js');
+const { getInterface } = require('../lib');
 
 describe('Tests of getInterface function', () => {
   it('type', () => {
