@@ -1,9 +1,18 @@
 const { getInterface, scanNetworks } = require('../lib');
 
+const validInterfaces = [
+  'eth0'
+];
+
 describe('getInterface function', () => {
   it('output is string', () => {
     const iface = getInterface();
     expect(typeof iface).toEqual('string');
+  });
+
+  it('output is valid', () => {
+    const iface = getInterface();
+    expect(validInterfaces).toContain(iface);
   });
 });
 
