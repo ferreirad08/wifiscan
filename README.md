@@ -3,7 +3,7 @@
 ![Tests](https://github.com/ferreirad08/wifiscan/actions/workflows/tests.yml/badge.svg)
 ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fjsonblob.com%2Fapi%2FjsonBlob%2F1048771169276411904)
 
-Biblioteca para obter o indicador de intensidade do sinal recebido de redes wi-fi.
+Library to get the received signal strength indicator (RSSI) from Wi-Fi networks.
 
 ```javascript
 const { getInterface, scanNetworks } = require('wifiscan');
