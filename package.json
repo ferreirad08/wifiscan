@@ -1,10 +1,10 @@
 {
   "name": "wifiscan",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "description": "Library to get the received signal strength indicator (RSSI) from Wi-Fi networks.",
+  "main": "./lib/index.js",
+  "bin": {
+    "wifiscan": "bin/wifiscan.js"
   },
   "scripts": {
     "test": "jest"
