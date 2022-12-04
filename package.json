@@ -10,8 +10,8 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "David Ferreira, MSc",
-  "license": "ISC",
+  "author": "David Ferreira, MSc <ferreirad08@gmail.com>",
+  "license": "MIT",
   "preferGlobal": "true",
   "devDependencies": {
     "jest": "^29.3.1"
