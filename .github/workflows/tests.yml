@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           sudo apt install wireless-tools
+          route
           iwlist eth0 scanning
           npm install
           COV=$(npm test -- --coverage --collectCoverageFrom='./lib/**' | grep 'All files' | awk '{print $4}')
