@@ -12,6 +12,7 @@
   "keywords": [],
   "author": "David Ferreira, MSc",
   "license": "ISC",
+  "preferGlobal": "true",
   "devDependencies": {
     "jest": "^29.3.1"
   }
