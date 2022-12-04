@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": ["wifiscan", "wifi", "rssi", "power", "signal", "wireless", "app"],
   "author": "David Ferreira, MSc <ferreirad08@gmail.com>",
   "license": "MIT",
   "preferGlobal": "true",
