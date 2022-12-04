@@ -8,7 +8,7 @@ Library to get the received signal strength indicator (RSSI) from Wi-Fi networks
 
 ## Installation
 
-Simply install **wifiscan** library from NPM
+Simply install **wifiscan** library from [NPM](https://www.npmjs.com/package/wifiscan)
 
 ```bash
 $ npm install wifiscan
