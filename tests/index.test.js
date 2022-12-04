@@ -17,10 +17,10 @@ describe('getInterface function', () => {
   });
 });
 
-/*describe('scanNetworks function', () => {
+describe('scanNetworks function', () => {
   it('output is object', () => {
     const iface = getInterface();
     const networks = scanNetworks(iface);
     expect(networks).toBeInstanceOf(Object);
   });
-});*/
+});
