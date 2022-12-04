@@ -1,7 +1,8 @@
 const { getInterface, scanNetworks } = require('../lib');
 
 const validInterfaces = [
-  'eth0'
+  'eth0',
+  'wlan0'
 ];
 
 describe('getInterface function', () => {
