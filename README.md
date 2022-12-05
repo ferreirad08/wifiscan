@@ -34,4 +34,12 @@ const iface = getInterface();
 const networks = scanNetworks(iface);
 
 console.log(networks);
+/**
+ * {
+ *   'networkName0': -70,
+ *   'networkName1': -75,
+ *   ...
+ *   'networkNameN': -91
+ * }
+ */
 ```
