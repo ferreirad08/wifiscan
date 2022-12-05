@@ -13,7 +13,15 @@
     "type": "git",
     "url": "git@github.com:ferreirad08/wifiscan.git"
   },
-  "keywords": ["wifiscan", "wifi", "rssi", "power", "signal", "wireless", "app"],
+  "keywords": [
+    "wifiscan",
+    "wifi",
+    "rssi",
+    "power",
+    "signal",
+    "wireless",
+    "app"
+  ],
   "author": "David Ferreira, MSc <ferreirad08@gmail.com>",
   "license": "MIT",
   "preferGlobal": "true",
