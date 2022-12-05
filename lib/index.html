@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="2"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wi-Fi Analyzer</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+  <canvas id="root"></canvas>
+  <script>
+    const chart = new Chart('root', {
+      type: 'bar',
+      data: {
+        labels: ['f.coelho', 'f.coelho5', '#NET-CLARO-WIFI'],
+        datasets: [{
+          // label: 'Wi-Fi Analyzer',
+          data: [-60, -20, -80].map(x => x + 100),
+          backgroundColor: 'rgb(54, 162, 235)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Wi-Fi Analyzer',
+        },
+        scales: {
+          xAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'SSID'
+            },
+            ticks: {
+              autoSkip: false,
+              maxRotation: 15,
+              minRotation: 15
+            }
+          }],
+          yAxes: [{
+            display: true,
+            stacked: true,
+            ticks: {
+              min: -100,
+              max: 100
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'RSSI (dBm)'
+            }
+          }]
+        }
+      }
+    });
+  </script>
+</body>
+</html>
