@@ -12,7 +12,7 @@ Library to get the received signal strength indicator (RSSI) from Wi-Fi networks
 ## Dependencies
 
 ```bash
-$ apt install net-tools wireless-tools
+$ sudo apt install net-tools wireless-tools
 ```
 
 ## Installation
