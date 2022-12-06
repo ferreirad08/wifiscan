@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          sudo apt install net-tools wireless-tools
+          sudo apt install net-tools wireless-tools curl
           npm install
           COV=$(npm test -- --coverage --collectCoverageFrom='./lib/**' | grep 'All files' | awk '{print $4}')
           curl -X PUT -H "Content-Type: application/json" -d '{"schemaVersion":1,"label":"coverage","message":"'$COV'%","color":"yellow","namedLogo":"jest"}' https://jsonblob.com/api/jsonBlob/1048771169276411904 
