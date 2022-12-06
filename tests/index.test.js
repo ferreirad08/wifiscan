@@ -29,7 +29,7 @@ describe('scanNetworks function', () => {
 /*describe('wifiAnalyzer function', () => {
   it('output of scanNetworks endpoint is object', () => {
     setTimeout(wifiAnalyzer, 0);
-    networks = JSON.parse(execSync(`curl http://localhost:3000/scanNetworks`));
+    networks = JSON.parse(execSync(`curl http://localhost:3000/scanNetworks`).toString());
     expect(networks).toBeInstanceOf(Object);
   });
 });*/
