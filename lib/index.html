@@ -14,10 +14,10 @@
     const chart = new Chart('chart', {
       type: 'bar',
       data: {
-        labels: ['f.coelho', 'f.coelho5', '#NET-CLARO-WIFI'],
+        labels: [''],
         datasets: [{
           // label: 'Wi-Fi Analyzer',
-          data: [-65, -20, -80].map(value => value + 100),
+          data: [0],
           backgroundColor: 'rgb(54, 162, 235)',
           borderWidth: 0
         }]
@@ -58,6 +58,19 @@
         }
       }
     });
+
+    function getValues() {
+      fetch('http://localhost:3000/scanNetworks').then((res) => {
+        res.json().then((data) => {
+          chart.data.labels = Object.keys(data);
+          chart.data.datasets[0].data = Object.values(data).map(value => value + 100);
+          chart.update();
+        });
+      });
+      setTimeout(getValues, 1000);
+    }
+
+    getValues();
   </script>
 </body>
 </html>
