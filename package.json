@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ferreirad08/wifiscan.git"
+    "url": "https://github.com/ferreirad08/wifiscan"
   },
   "keywords": [
     "wifiscan",
@@ -25,6 +25,9 @@
   "author": "David Ferreira, MSc <ferreirad08@gmail.com>",
   "license": "MIT",
   "preferGlobal": "true",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
   "devDependencies": {
     "jest": "^29.3.1"
   }
