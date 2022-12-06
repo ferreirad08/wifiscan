@@ -9,9 +9,9 @@
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
-  <canvas id="root"></canvas>
+  <canvas id="chart"></canvas>
   <script>
-    const chart = new Chart('root', {
+    const chart = new Chart('chart', {
       type: 'bar',
       data: {
         labels: ['f.coelho', 'f.coelho5', '#NET-CLARO-WIFI'],
@@ -19,7 +19,7 @@
           // label: 'Wi-Fi Analyzer',
           data: [-60, -20, -80].map(x => x + 100),
           backgroundColor: 'rgb(54, 162, 235)',
-          borderWidth: 1
+          borderWidth: 0
         }]
       },
       options: {
@@ -44,7 +44,10 @@
             display: true,
             stacked: true,
             ticks: {
-              min: -100,
+              callback: function(value, index, values) {
+                return value - 100;
+              },
+              min: 0,
               max: 100
             },
             scaleLabel: {
