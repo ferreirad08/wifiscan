@@ -21,6 +21,7 @@ describe('scanNetworks function', () => {
   it('output is object', () => {
     const iface = getInterface();
     const networks = scanNetworks(iface);
+    console.log(networks);
     expect(networks).toBeInstanceOf(Object);
   });
 });
