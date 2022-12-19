@@ -45,7 +45,7 @@
             display: true,
             stacked: true,
             ticks: {
-              callback: function(value, index, values) {
+              callback: (value, index, values) => {
                 return value - 100;
               },
               min: 0,
@@ -60,7 +60,7 @@
       }
     });
 
-    function getValues() {
+    const getValues = () => {
       fetch('http://localhost:3000/scanNetworks').then((res) => {
         res.json().then((data) => {
           chart.data.labels = Object.keys(data);
