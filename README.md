@@ -28,6 +28,9 @@ $ npm install wifiscan
 ```javascript
 const { getInterface, scanNetworks } = require('wifiscan');
 
+// In TypeScript
+// import { getInterface, scanNetworks } from 'wifiscan';
+
 // Getting the default Network Interface
 const iface = getInterface();
 
